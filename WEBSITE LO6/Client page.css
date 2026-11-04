@@ -1,0 +1,299 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #111;
+    color: white;
+}
+
+/* HEADER */
+header {
+    background: #080808;
+    padding: 25px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+.logo span {
+    color: #ff1493;
+}
+
+nav {
+    display: flex;
+    gap: 22px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #ffcc00;
+}
+
+/* INTRODUCTION */
+.clients-intro {
+    text-align: center;
+    padding: 75px 15%;
+    background: linear-gradient(135deg, #242424, #080808);
+}
+
+.clients-intro h1 {
+    font-size: 45px;
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+.clients-intro h1 span {
+    color: #ff1493;
+}
+
+.clients-intro p {
+    color: #ccc;
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 750px;
+    margin: auto;
+}
+
+/* CLIENTS SECTION */
+.clients-section {
+    padding: 65px 8%;
+    text-align: center;
+}
+
+.clients-section h2 {
+    font-size: 30px;
+    margin-bottom: 45px;
+    color: #ffcc00;
+}
+
+.clients-section h2 span {
+    color: #ff1493;
+}
+
+.clients-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* CLIENT CARDS */
+.client-card {
+    background: #1c1c1c;
+    padding: 35px 25px;
+    border: 1px solid #383838;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.client-card:hover {
+    transform: translateY(-8px);
+    border-color: #ffcc00;
+    box-shadow: 0 5px 20px rgba(255, 204, 0, 0.15);
+}
+
+.client-icon {
+    width: 75px;
+    height: 75px;
+    background: #ffcc00;
+    color: #111;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    font-weight: bold;
+    margin: 0 auto 20px;
+}
+
+.client-card h3 {
+    color: #ff1493;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.client-card p {
+    color: #ccc;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 22px;
+}
+
+.client-card a {
+    display: inline-block;
+    text-decoration: none;
+    color: #111;
+    background: #ffcc00;
+    padding: 10px 22px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.client-card a:hover {
+    background: #ff1493;
+    color: white;
+}
+
+/* CLIENT RELATIONSHIPS */
+.testimonial {
+    background: #202020;
+    text-align: center;
+    padding: 60px 15%;
+}
+
+.testimonial h2 {
+    color: #ffcc00;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.testimonial h2 span {
+    color: #ff1493;
+}
+
+.testimonial p {
+    color: #ccc;
+    line-height: 1.8;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.testimonial h3 {
+    color: #ff1493;
+    font-size: 22px;
+}
+
+.testimonial .tagline {
+    font-size: 13px;
+}
+
+/* CALL TO ACTION */
+.client-cta {
+    text-align: center;
+    padding: 60px 15%;
+    background: linear-gradient(135deg, #111, #292929);
+}
+
+.client-cta h2 {
+    color: #ffcc00;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.client-cta p {
+    color: #ccc;
+    margin-bottom: 25px;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 13px 30px;
+    background: #ff1493;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.contact-button:hover {
+    background: #ffcc00;
+    color: #111;
+}
+
+/* FOOTER */
+footer {
+    background: #050505;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+footer h2 {
+    color: #ffcc00;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+footer h2 span {
+    color: #ff1493;
+}
+
+footer p {
+    color: #bbb;
+    margin-bottom: 15px;
+}
+
+.social-links {
+    margin: 20px 0;
+}
+
+.social-links a {
+    color: #ffcc00;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 14px;
+}
+
+.social-links a:hover {
+    color: #ff1493;
+}
+
+.copyright {
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .clients-container {
+        grid-template-columns: 1fr;
+    }
+
+    .clients-intro {
+        padding: 50px 8%;
+    }
+
+    .clients-intro h1 {
+        font-size: 34px;
+    }
+
+    .testimonial,
+    .client-cta {
+        padding: 45px 8%;
+    }
+}
+

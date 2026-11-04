@@ -1,0 +1,592 @@
+
+/* GENERAL STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0B0D0F;
+}
+
+
+/* HEADER AND NAVIGATION */
+
+header {
+    width: 100%;
+    min-height: 145px;
+    background-color: #090B0D;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 25px;
+    border-bottom: 5px solid #303236;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-circle {
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    border: 2px solid #F12678;
+    background-color: #1A1A1A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.logo-circle span:first-child {
+    color: white;
+}
+
+.logo-circle span:last-child {
+    color: #FFE600;
+}
+
+.logo-text h2 {
+    color: #FFE600;
+    font-size: 26px;
+}
+
+.logo-text p {
+    color: white;
+    font-size: 18px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 12px 0;
+}
+
+nav a:hover {
+    color: #F12678;
+}
+
+nav .active {
+    color: #F12678;
+    font-weight: bold;
+    border-bottom: 4px solid #FFE600;
+}
+
+
+/* HERO SECTION */
+
+.hero {
+    min-height: 520px;
+    background: linear-gradient(
+        120deg,
+        #080A0C,
+        #3C3F40,
+        #080A0C
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 60px 55px 90px;
+}
+
+.hero-content {
+    width: 52%;
+}
+
+.hero-content h4 {
+    color: #FFE600;
+    font-size: 16px;
+    margin-bottom: 35px;
+}
+
+.hero-content h1 {
+    color: white;
+    font-size: 54px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.hero-content h2 {
+    color: #F12678;
+    font-size: 54px;
+    margin-bottom: 30px;
+}
+
+.hero-content p {
+    color: #E7E8EA;
+    font-size: 22px;
+    line-height: 1.5;
+    margin-bottom: 35px;
+    max-width: 500px;
+}
+
+
+/* HERO BUTTON */
+
+.hero-button {
+    display: inline-block;
+    background-color: #FFE600;
+    color: #090B0D;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 17px 30px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.hero-button:hover {
+    background-color: #F12678;
+    color: white;
+}
+
+
+/* HERO DESIGN GRAPHIC */
+
+.hero-image {
+    width: 330px;
+    height: 330px;
+    background-color: #1A1D20;
+    border: 2px solid #4A4D50;
+    border-radius: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.design-box {
+    width: 230px;
+    height: 230px;
+    background-color: #F0F1F1;
+    border-radius: 12px;
+    padding: 28px 26px;
+    display: flex;
+    gap: 14px;
+}
+
+.pink-box {
+    width: 85px;
+    height: 155px;
+    background-color: #F12678;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pink-box span {
+    color: white;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.right-boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.yellow-box {
+    width: 82px;
+    height: 72px;
+    background-color: #FFE600;
+    border-radius: 5px;
+    font-size: 38px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.black-box {
+    width: 82px;
+    height: 68px;
+    background-color: #17191B;
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* HERO TAGLINE */
+
+.hero-tagline {
+    position: absolute;
+    bottom: 35px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #FFE600;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+/* SERVICES SECTION */
+
+.services {
+    min-height: 250px;
+    background-color: #F4F6F8;
+    padding: 50px 55px 30px;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-heading h4 {
+    color: #F12678;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.section-heading h2 {
+    color: #18202B;
+    font-size: 28px;
+}
+
+
+/* SERVICE CARDS */
+
+.service-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.service-card {
+    width: 33.33%;
+    min-height: 85px;
+    background-color: white;
+    border: 2px solid #E1E5E9;
+    border-radius: 12px;
+    display: flex;
+    overflow: hidden;
+}
+
+.pink-line {
+    width: 8px;
+    min-width: 8px;
+    background-color: #F12678;
+}
+
+.yellow-line {
+    width: 8px;
+    min-width: 8px;
+    background-color: #FFE600;
+}
+
+.service-content {
+    padding: 18px 16px;
+}
+
+.service-content h3 {
+    color: #18202B;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.service-content p {
+    color: #526071;
+    font-size: 13px;
+}
+
+
+/* ABOUT SECTION */
+
+.about-section {
+    min-height: 330px;
+    background-color: #151719;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 55px 58px;
+    gap: 35px;
+}
+
+.about-content {
+    width: 55%;
+}
+
+.about-content h4 {
+    color: #FFE600;
+    font-size: 14px;
+    margin-bottom: 35px;
+}
+
+.about-content h2 {
+    color: white;
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+
+.about-content p {
+    color: #D5D8DC;
+    font-size: 17px;
+    line-height: 1.6;
+    max-width: 520px;
+    margin-bottom: 35px;
+}
+
+
+/* ABOUT BUTTON */
+
+.about-button {
+    display: inline-block;
+    background-color: #F12678;
+    color: white;
+    text-decoration: none;
+    padding: 13px 25px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.about-button:hover {
+    background-color: #FFE600;
+    color: #090B0D;
+}
+
+
+/* ABOUT IMAGE */
+
+.about-image {
+    width: 300px;
+    height: 210px;
+    border-radius: 14px;
+    background: linear-gradient(
+        to bottom,
+        #A7A9A6,
+        #252729
+    );
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-image h3 {
+    color: #090B0D;
+    font-size: 16px;
+}
+
+.about-image h2 {
+    color: #FFE600;
+    font-size: 32px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #090B0D;
+    padding: 24px 42px 10px;
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5px 35px;
+    border-top: 1px solid #55585A;
+}
+
+.footer-brand h1 {
+    color: #FFE600;
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.footer-brand h3 {
+    color: white;
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.footer-brand p {
+    color: #C7CBD0;
+    font-size: 13px;
+}
+
+.footer-social h4,
+.footer-contact h4 {
+    color: #FFE600;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.footer-social p,
+.footer-contact p {
+    color: white;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+
+/* COPYRIGHT */
+
+.copyright {
+    border-top: 1px solid #55585A;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.copyright p {
+    color: #C7CBD0;
+    font-size: 12px;
+}
+
+
+/* RESPONSIVE DESIGN FOR TABLETS */
+
+@media screen and (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+        padding: 45px 25px 85px;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero-content h1,
+    .hero-content h2 {
+        font-size: 42px;
+    }
+
+    .hero-image {
+        max-width: 100%;
+    }
+
+    .service-container {
+        flex-wrap: wrap;
+    }
+
+    .service-card {
+        width: 100%;
+    }
+
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content {
+        width: 100%;
+    }
+
+    .about-image {
+        max-width: 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+}
+
+
+/* RESPONSIVE DESIGN FOR MOBILE PHONES */
+
+@media screen and (max-width: 480px) {
+
+    .logo-text h2 {
+        font-size: 21px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .hero-content h1,
+    .hero-content h2 {
+        font-size: 34px;
+    }
+
+    .hero-content p {
+        font-size: 17px;
+    }
+
+    .hero-image {
+        width: 280px;
+        height: 280px;
+    }
+
+    .design-box {
+        transform: scale(0.9);
+    }
+
+    .section-heading h2 {
+        font-size: 22px;
+    }
+
+    .services {
+        padding: 40px 20px;
+    }
+
+    .about-content h2 {
+        font-size: 28px;
+    }
+
+    .about-content p {
+        font-size: 15px;
+    }
+
+    .about-image {
+        width: 100%;
+    }
+
+    footer {
+        padding: 25px;
+    }
+
+}
